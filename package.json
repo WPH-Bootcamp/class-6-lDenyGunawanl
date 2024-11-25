@@ -1,7 +1,7 @@
 {
   "name": "scss-class-6",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3b_lDPPY)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "chokidar": "^4.0.1"
+  },
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.80.6"
+    "sass": "^1.81.0"
   }
 }

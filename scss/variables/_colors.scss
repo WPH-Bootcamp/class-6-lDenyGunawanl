@@ -1,4 +1,114 @@
+@use 'sass:map';
+
 $white: #fff;
 $black: #000;
 
 // add the $colors map here (2 dimensional map)
+
+$colors-scheme: (
+  'gray': (
+    '25': #fcfcfd,
+    '50': #f9fafb,
+    '100': #f2f4f7,
+    '200': #e4e7ec,
+    '300': #d0d5dd,
+    '400': #98a2b3,
+    '500': #667085,
+    '600': #475467,
+    '700': #344054,
+    '800': #182230,
+    '900': #101828,
+    '950': #0c111d,
+  ),
+  'brand': (
+    '25': #fcfaff,
+    '50': #f9f5ff,
+    '100': #f4ebff,
+    '200': #e9d7fe,
+    '300': #d6bbfb,
+    '400': #b692f6,
+    '500': #9e77ed,
+    '600': #7f56d9,
+    '700': #6941c6,
+    '800': #53389e,
+    '900': #42307d,
+    '950': #2c1c5f,
+  ),
+  'error': (
+    '25': #fffbfa,
+    '50': #fef3f2,
+    '100': #fee4e2,
+    '200': #fecdca,
+    '300': #fda29b,
+    '400': #f97066,
+    '500': #f04438,
+    '600': #d92d20,
+    '700': #b42318,
+    '800': #912018,
+    '900': #7a271a,
+    '950': #55160c,
+  ),
+  'warning': (
+    '25': #fffcf5,
+    '50': #fffaeb,
+    '100': #fef0c7,
+    '200': #fedf89,
+    '300': #fec84b,
+    '400': #fdb022,
+    '500': #f79009,
+    '600': #dc6803,
+    '700': #b54708,
+    '800': #93370d,
+    '900': #7a2e0e,
+    '950': #4e1d09,
+  ),
+  'success': (
+    '25': #f6fef9,
+    '50': #ecfdf3,
+    '100': #dcfae6,
+    '200': #abefc6,
+    '300': #75e0a7,
+    '400': #47cd89,
+    '500': #17b26a,
+    '600': #079455,
+    '700': #067647,
+    '800': #085d3a,
+    '900': #074d31,
+    '950': #053321,
+  ),
+);
+
+// @mixin $color($type, $level) {
+//   @if map.has-key($sizes, $size) and map.has-key($weights, $weight) {
+//     @each $key, $value in map.get($sizes, $size) {
+//       #{$key}: $value;
+//     }
+//     font-weight: map.get($weights, $weight);
+//   } @else {
+//     @warn 'Invalid size or weight specified';
+//   }
+// }
+
+// @each $key, $value in map.get($colors-scheme, 'success') {
+//   //#{$key}: $value;
+//   @debug $value;
+// }
+
+// @debug map.has-key(map.get($colors-scheme, 'gray'), '50');
+// $colorType: map.get(map.get($colors-scheme, 'gray'), '50');
+// @debug $colorType;
+// @debug map.has-key($colorType, '50');
+// $type: 'ray';
+// $level: '50';
+
+// @mixin getColor($type, $level) {
+//   $colorType: map.get($colors-scheme, $type);
+//   @if $colorType and map.has-key($colorType, $level) {
+//     $return: map.get($colorType, $level);
+//     @debug $return;
+//   } @else {
+//     @warn 'Invalid color type or level';
+//   }
+// }
+
+// @include getColor($type, $level);
