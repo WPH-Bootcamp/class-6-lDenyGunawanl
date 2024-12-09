@@ -5,7 +5,7 @@
   // add the logic here
   $colorType: map.get($colors-scheme, $type);
   // use if else to check if the type and level are valid
-  @if $colorType and map.has-key($colorType, $level) {
+  @if map.has-key($colors-scheme, $type) and map.has-key($colorType, $level) {
     $return: map.get($colorType, $level);
     // if they are valid, return the color
     @return $return;
